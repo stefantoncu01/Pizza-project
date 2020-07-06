@@ -1,2 +1,2 @@
 # Pizza-project
-Mini testing project on classes using Pytest
+Mini testing project with classes, using Pytest
