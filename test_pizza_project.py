@@ -58,10 +58,11 @@ def test_order_total_price_no_card(vegan_pizza, carnivora_pizza):
     assert third_order.total_price == 61.5
 
 
-#Test 5 Create an Order. Test invoice property
-# def test_order_invoice(order_one):
-#     assert order_one.invoice == '\n'.join([f'{product.name} - {product.price}' for product in self.products]) + \
-#                 '\nThe total price is {}! \nThe delivery will be in {}!'.format(self.total_price, self.client.address)
+# Test 5 Create an Order. Test invoice property
+def test_order_invoice(order_one):
+    assert order_one.total_price == 28.35
+    assert order_one.client.address == "Bucharest"
+    assert order_one.products[0].name == "vegan"
 
 
 # Test 6 Create an Order. Test Client attributes.
