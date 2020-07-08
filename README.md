@@ -29,8 +29,8 @@ Sizes available: small, medium, large
 #####Tests
 1. Create some Pizzas, one of each type and assert the price for each one.
 2. Create two Client objects and assert some client attributes
-3. Test 3.Create an Order having a client with a card. Assert the total_price
-4. Test 4.Create an Order having a client without a card. Assert the total_price
-5. Test 5.Create an Order. Test invoice property
-6. Test 6.Create an Order. Test Client attributes.
-7. Test 7.Create an Order. Test Pizzas attributes and prices
+3. Create an Order having a client with a card. Assert the total_price
+4. Create an Order having a client without a card. Assert the total_price
+5. Create an Order. Test invoice property
+6. Create an Order. Test Client attributes.
+7. Create an Order. Test Pizzas attributes and prices
