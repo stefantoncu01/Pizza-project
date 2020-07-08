@@ -1,24 +1,24 @@
 # Pizza-project
 
 #Create a Pizza class with the following attributes:
-# - name
-# - size
-# - ingredients
-#Sizes available: small, medium, large
-#
-#Create two Pizza subclasses: VeganPizza and CarnivoraPizza:
-# - VeganPizza ingredients: 'tomato_sauce', 'pepper', 'olives'
-# - CarnivoraPizza ingredients: 'tomato_sauce', 'cheese', 'chicken', 'parmesan', 'spinach'
-#
-#Add a method for calculating the price. The price should be based on size and ingredients using the following formula:
-#    price = size_price * (no_of_ingredients * price_per_ingredient)
-#Price information:
-#price_per_ingredient - default value should be 3
-#Small size - $ 1
-#Medium size - $ 1.2
-#Big size - $ 1.5
+ - name
+ - size
+ - ingredients
+Sizes available: small, medium, large
 
-#Create two new classes “Order” & “Client”
+##Create two Pizza subclasses: VeganPizza and CarnivoraPizza:
+ - VeganPizza ingredients: 'tomato_sauce', 'pepper', 'olives'
+ - CarnivoraPizza ingredients: 'tomato_sauce', 'cheese', 'chicken', 'parmesan', 'spinach'
+
+###Add a method for calculating the price. The price should be based on size and ingredients using the following formula:
+   price = size_price * (no_of_ingredients * price_per_ingredient)
+Price information:
+price_per_ingredient - default value should be 3
+Small size - $ 1
+Medium size - $ 1.2
+Big size - $ 1.5
+
+###Create two new classes “Order” & “Client”
 #Client class:
 #attributes: name, address, has_card (bool)
 #Order class:
