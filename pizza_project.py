@@ -11,7 +11,6 @@ class Pizza:
     def price(self):
         """
         Calculates the price based on size and ingredients
-        :return: an integer, it represents the price of the pizza
         """
         price_per_ingredient = 3
         size_price = {
@@ -79,8 +78,7 @@ class Order:
     @property
     def total_price(self):
         """
-        Calculates the total price of the order based on products attribute. If the client has_card a 10% discount should be applied.
-        :return: an integer, it represents the total price of the order
+        Calculates the total price of the order based on products attributes. If the client has_card a 10% discount should be applied.
         """
         price = sum([product.price for product in self.products])
         if self.client.has_card:
@@ -91,7 +89,6 @@ class Order:
     def invoice(self):
         """
         Table formatted string containing all products associated with this order, their prices, the total price, and client information
-        :return: Table formatted string
         """
         result ='\n'.join([f'{product.name} - {product.price}' for product in self.products])
         result += f'\nThe total price is {self.total_price}! \nThe delivery will be in {self.client.address}!'
