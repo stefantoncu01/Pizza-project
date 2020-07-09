@@ -88,7 +88,7 @@ class Order:
         return price
 
     @property
-    def invoice(self):\
+    def invoice(self):
         """
         Table formatted string containing all products associated with this order, their prices, the total price, and client information
         :return: Table formatted string
